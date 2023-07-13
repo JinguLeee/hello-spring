@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service    // 빈으로 관리시키기 위해 (Autowire)
+//@Service    // 빈으로 관리시키기 위해 (Autowire)
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired // MemberRepository와 연결하기 위해
+//    @Autowired // MemberRepository와 연결하기 위해
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
