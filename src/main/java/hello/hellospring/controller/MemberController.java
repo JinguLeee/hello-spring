@@ -19,6 +19,8 @@ public class MemberController {
     @Autowired  // 알아서 스프링 컨테이너와 연결시켜줌
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
+        // class hello.hellospring.service.MemberService$$SpringCGLIB$$0 -> // memberService를 복재하여 조작 / 프록시를 통해 AOP가 실행
     }
 
     @GetMapping("/members/new")
